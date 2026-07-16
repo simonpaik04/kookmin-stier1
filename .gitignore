@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ROS 2 build outputs live at the workspace root.
+build/
+install/
+log/
+
+# Local capture/training outputs should stay outside this package.
+datasets/
+runs/
+
+# Keep the selected deployment model, but ignore ad-hoc model dumps.
+*.onnx
+*.engine
+*.torchscript
+models/*.tmp.pt
+models/*last*.pt
